@@ -2,9 +2,9 @@
 import background from '../assets/background.svg';
 ---
 
-<div id="container">
+<div class="lg:w-7/12 xl:w-3/5 lg:overflow-y-auto" id="container">
 	<img id="background" src={background.src} alt="" fetchpriority="high" />
-    <main class=" flex flex-col">
+    <main class="flex flex-col px-8 xl:px-12 2xl:px-16 space-y-10 xl:space-y-10 py-24 xl:py-24">
             <!--profile section-->
         <section>
 			<h1>
@@ -14,35 +14,12 @@ import background from '../assets/background.svg';
                 A Software Developer
 			</h1>
             <div>
-                <p> 
-                I recently graduated as a Master of IT from Royal Melbourne Insitute of Technology 
+
+                <p>
+                  I’m a fresh graduate from RMIT University with a strong focus on backend and cloud development.
+                  I enjoy building scalable systems, working with APIs, and deploying applications to the cloud.
                 </p>
-            </div>
-        </section>
 
-            <hr/>
-        <section>
-            <!--education-->
-            <div class="grid gap-6">
-              <div>
-                <div class="flex justify-between items-center">
-                  <span class="font-semibold">Royal Melbourne Institute of Technology</span>
-                  <span class="whitespace-nowrap">03/2024 - 06/2025</span>
-                </div>
-                <div class="mt-1 text-sm">
-                  Master of Information Technology
-                </div>
-              </div>
-
-              <div>
-                <div class="flex justify-between items-center">
-                  <span class="font-semibold">Royal Melbourne Institute of Technology</span>
-                  <span class="whitespace-nowrap">03/2020 - 12/2023</span>
-                </div>
-                <div class="mt-1 text-sm">
-                  Bachelor of Information Technology
-                </div>
-              </div>
             </div>
         </section>
 
@@ -52,12 +29,24 @@ import background from '../assets/background.svg';
             <!--experience-->
             Experience
             <div> 
-                Internship
+                Internship 07/2024 - 11/2024    
                 Vision verse
+
             </div>
             <div>
-                Freelancer
+                <!--description-->
+                Participated in weekly meetings to discuss strategies, solutions, and identify areas for improvement.
+                Designed and Developed Database ensure scalability for further development.
+                Contributing to future scopes and development road map of the product.
+            </div>
+
+            <div>
+                Freelancer 01/2024 - 07/2024
                 Pixels Proof                
+
+            </div>
+            <div>
+                <!--description-->
             </div>
 
         </section>
@@ -68,11 +57,31 @@ import background from '../assets/background.svg';
             Projects
             <div>
                 SuperPrice
+                <a href="https://superprice.vercel.app/"> Link  </a>
+                
+                <p>
+                E-commerce application helps users compare prices across the online markets with ease. Future development is to build a feature to help users to order from cheapest site.
+                </p>
+
             </div>
+
             <div>
                 Find your teammate
+                <a href=""> Link  </a>
+
+                <p>
+                An application allows teachers and students to allocate, enroll classes. 
+                </p>
             </div>
+
         </section>
+
+
+        <section> 
+            <button type="button" onclick="">
+                Download Resume
+            </button>
+        </section> 
 	</main>
 </div>
 

@@ -1,20 +1,31 @@
+---
+import image from '../assets/profile.jpeg';
+import { Image } from "astro:assets";
+---
 <div class="lg:w-6/12 xl:w-3/6 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto lg:flex lg:flex-col lg:justify-start py-24">
 <header>
     <div>
-        <h1>Owen Nguyen </h1>
-        <h2>Software Developer</h2>
+        <Image class="w-48 h-48 rounded-full object-cover" id="image" src={image} alt="" fetchpriority="high" />
+    </div>
+    <div class="py-4">
+        <h1 class="text-3xl sm:text-4xl font-black md:text-5xl">Owen Nguyen</h1>
+        <h2 class="pointer-events-auto my-2 text-xl sm:text-2xl md:my-4 md:text-3xl">Software Developer</h2>
+
         <p>
+        Just a casual coder who loves coding, interested in design patterns and algorithms.
         </p>
     </div>
-    <div>
-        <!-- LinkedIn --> 
-        <a href="" target="_blank"> 
-            <i class="fa-brands fa-linkedin text-zinc-400 hover:text-zinc-100 transition-colors"></i> 
-        </a> 
-        <!-- GitHub --> 
-        <a href="https://github.com/s3891667" target="_blank"> 
-            <i class="fa-brands fa-github text-zinc-400 hover:text-zinc-100 transition-colors"></i> 
-        </a> 
-    </div>
+    <div class="flex gap-4">
+    <!-- LinkedIn --> 
+    <a href="" target="_blank"> 
+        <i class=" fa-2x fa-brands fa-linkedin text-2xl text-zinc-400 hover:text-zinc-100 transition-colors"></i> 
+    </a> 
+
+    <!-- GitHub --> 
+    <a href="https://github.com/s3891667" target="_blank"> 
+        <i class=" fa-2x fa-brands fa-github text-2xl text-zinc-400 hover:text-zinc-100 transition-colors"></i> 
+    </a> 
+</div>
+
   </header>
 </div>
